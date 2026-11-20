@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85.6mm" height="54mm" viewBox="0 0 856 540" role="img" aria-labelledby="title description">
+<title id="title">Simeon Sengco III — NFC card back, QR pending</title><desc id="description">Back layout with connection instructions and a clearly labeled empty QR-code placeholder. This draft contains no scannable QR code.</desc>
+<defs>
+  <linearGradient id="card-background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2e3551"/><stop offset="1" stop-color="#191e32"/></linearGradient>
+</defs>
+<rect width="856" height="540" fill="url(#card-background)"/>
+<path d="M605 0C565 195 723 263 856 276M677 0C632 151 755 200 856 211M748 0C721 88 791 129 856 144" fill="none" stroke="#d7cfde" stroke-opacity=".09" stroke-width="1.5"/>
+<text x="64" y="91" fill="#d7cfde" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">KEEP IN TOUCH</text>
+<text x="62" y="169" fill="#f8f7fb" font-family="Arial, sans-serif" font-size="43" font-weight="700" letter-spacing="-1.3">Let’s connect.</text>
+<text x="65" y="215" fill="#b6b8c8" font-family="Arial, sans-serif" font-size="17"><tspan x="65">One tap. All my details.</tspan><tspan x="65" dy="27">Or scan to open my digital card.</tspan></text>
+<path d="M65 294H111" stroke="#d7cfde" stroke-width="2"/>
+<text x="65" y="337" fill="#d7cfde" font-family="Arial, sans-serif" font-size="14"><tspan x="65">Save my contact</tspan><tspan x="65" dy="27">Explore my résumé</tspan><tspan x="65" dy="27">Find me online</tspan></text>
+<rect x="492" y="101" width="300" height="300" rx="16" fill="#ffffff"/>
+<rect x="521" y="130" width="242" height="242" rx="4" fill="#f3f3f6" stroke="#b6b8c8" stroke-width="1.5" stroke-dasharray="7 7"/>
+<text x="642" y="243" text-anchor="middle" fill="#252b46" font-family="Arial, sans-serif" font-size="18" font-weight="700">YOUR QR CODE</text>
+<text x="642" y="271" text-anchor="middle" fill="#555b70" font-family="Arial, sans-serif" font-size="12">Awaiting supplied image</text>
+<text x="642" y="430" text-anchor="middle" fill="#d7cfde" font-family="Arial, sans-serif" font-size="11" letter-spacing="2.4">SCAN TO CONNECT</text>
+<path d="M65 459H791" stroke="#d7cfde" stroke-opacity=".22"/>
+<text x="65" y="495" fill="#d7cfde" font-family="Arial, sans-serif" font-size="12" letter-spacing="1.8">SIMEON SENGCO III</text>
+<text x="791" y="495" text-anchor="end" fill="#b6b8c8" font-family="Arial, sans-serif" font-size="11">Digital identity. Personal connection.</text>
+</svg>
