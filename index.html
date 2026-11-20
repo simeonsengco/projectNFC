@@ -16,8 +16,9 @@
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="cursor-spotlight" aria-hidden="true"></div>
 
-    <header class="site-header page-width">
+    <header class="site-header">
       <a class="brand" href="./" aria-label="Simeon Sengco III home">
         <img src="assets/ss-logo.svg" width="42" height="42" alt="">
         <span>SIMEON SENGCO III<span class="brand-caption">DIGITAL CONTACT CARD</span></span>
@@ -27,25 +28,31 @@
 
     <main id="main-content" class="page-width card-layout">
       <!-- Profile and primary contact action. -->
-      <section class="profile" aria-labelledby="name">
+<section class="profile" aria-labelledby="name">
         <div class="portrait-frame">
           <img class="portrait" src="assets/profile.jpg" width="320" height="320" alt="Portrait of Simeon Sengco III in a gray collared uniform shirt" fetchpriority="high">
           <span class="portrait-badge"><img src="assets/ss-logo.svg" width="48" height="48" alt="SS monogram"></span>
         </div>
-        <p class="eyebrow">HELLO, I’M</p>
+        <p class="eyebrow">HELLO, I'M</p>
         <h1 id="name">Simeon<br>Sengco <span>III.</span></h1>
         <p class="role">BSIT Student <span aria-hidden="true">/</span> Aspiring IT Professional</p>
-        <p class="intro">A connection starts with a hello.<br>Let’s talk technology, ideas, and what’s next.</p>
-        <a class="button button-primary" id="save-contact" href="contact.vcf" download="Simeon-Sengco-III.vcf">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 16v4a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4"/></svg>
-          Save my contact
-        </a>
+        <p class="intro">A connection starts with a hello.<br>Let's talk technology, ideas, and what's next.</p>
+        <div class="cta-group">
+          <a class="button button-primary" id="save-contact" href="contact.vcf" download="Simeon-Sengco-III.vcf">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 16v4a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4"/></svg>
+            Save my contact
+          </a>
+          <button class="button button-share" id="share-btn" aria-label="Share or show QR code">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
+            Share / QR
+          </button>
+        </div>
         <p class="contact-hint">One tap. All my details.</p>
       </section>
 
       <div class="details">
         <!-- Social profiles and direct contact links work without JavaScript. -->
-        <section class="connect-section reveal reveal-delay-1" aria-labelledby="connect-heading">
+        <section class="connect-section" aria-labelledby="connect-heading">
           <div class="section-heading">
             <div>
               <p class="eyebrow">KEEP IN TOUCH</p>
@@ -119,7 +126,7 @@
         </section>
 
         <!-- Local résumé: preview in a new tab or download a copy. -->
-        <section class="resume-card reveal reveal-delay-2" aria-labelledby="resume-heading">
+        <section class="resume-card" aria-labelledby="resume-heading">
           <div class="resume-topline">
             <span class="document-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h5"/></svg></span>
             <span class="file-type">RÉSUMÉ / PDF</span>
