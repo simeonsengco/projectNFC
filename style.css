@@ -848,7 +848,7 @@ h2 {
   }
   .profile { text-align: center; }
   .portrait-frame { width: clamp(160px, 30vw, 200px); margin-inline: auto; margin-bottom: var(--space-6); }
-  .portrait-badge { right: -8px; bottom: -2px; width: 52px; height: 52px; }
+  .portrait-badge { right: -2px; bottom: -2px; width: 40px; height: 40px; }
   h1 { max-width: none; }
   .role, .intro { max-width: none; }
   .button-primary { max-width: 100%; }
