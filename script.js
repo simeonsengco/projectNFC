@@ -1,6 +1,24 @@
 (() => {
   "use strict";
 
+  // Scroll reveal: animate .reveal elements into view on scroll (once).
+  const revealEls = document.querySelectorAll(".reveal");
+  if (revealEls.length && "IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          obs.unobserve(entry.target);
+        });
+      },
+      { rootMargin: "0px 0px -80px 0px", threshold: 0.1 },
+    );
+    revealEls.forEach((el) => revealObserver.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add("is-visible"));
+  }
+
   // Keep the footer current without making the page depend on JavaScript.
   const year = document.getElementById("year");
   if (year) {
