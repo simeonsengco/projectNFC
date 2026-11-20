@@ -1,6 +1,6 @@
 # SS — NFC Digital Contact Card
 
-Static site (HTML, CSS, vanilla JS). No backend, database, trackers or cookies.
+Static site (HTML, CSS, vanilla JS). Tapmo records page views and NFC visits; the card site itself has no backend or cookies.
 
 ## Files
 `index.html` · `style.css` · `script.js` · `contact.vcf` (static fallback) · `assets/profile.jpg` · `assets/ss-logo.svg`
@@ -29,3 +29,5 @@ Open the HTTPS URL on your phone (iPhone and Android). Confirm the page loads, e
 4. Tap the card on a different phone to verify it opens the site. iPhone XS and newer and most Android phones read NFC with no app.
 
 Tip: do not lock the card until you are sure the URL is final.
+
+The deployed site includes the Tapmo tracking script in `<head>` with this client's profile ID. For an NFC chip, use the Tapmo-provided URL ending in `?source=nfc`; regular visits are recorded as web views. To check the integration again in the same browser tab, add `&tapmo_test=1` (or `?tapmo_test=1` if there are no query parameters) to bypass the per-tab duplicate guard.
